@@ -126,7 +126,6 @@ body {
 .whatido-row{
     display: flex;
     margin-bottom: 70px;
-    flex-direction: column;
     gap: 70px;
 }
 
