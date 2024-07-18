@@ -1,0 +1,202 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#index-topBar {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: large;
+
+    gap: 20px;
+    padding-right: 40px;
+}
+
+#desc-img-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    height: 450px;
+    align-items: center;
+    height: auto;
+}
+
+#desc-container {
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+}
+
+#name {
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#desc {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#my-img {
+    border-radius: 50%;
+}
+
+#links-icon-container {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+#links-icon img{
+    transition: transform .2s
+}
+
+#links-icon img:hover{
+    transform: scale(1.2);
+}
+
+#download-resume-btn button {
+    background-color: #0a0a23;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    min-height: 30px;
+    min-width: 120px;
+    border: 2px solid white;
+    transition: background-color .3s ease-in-out;
+}
+
+#download-resume-btn button:hover{
+    background-color: #fff;
+    color: #0a0a23;
+    border: 2px solid black;
+}
+
+.what-i-do {
+    position: relative;
+    max-width: 500px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.what-i-do:before {
+    content: " ";
+    height: 2px;
+    width: 130px;
+    background: black;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.what-i-do:after {
+    content: " ";
+    height: 2px;
+    width: 130px;
+    background: black;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+#whatido-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.whatido-row{
+    display: flex;
+    margin-bottom: 70px;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.whatido-row-col{
+    padding-left: 50px;
+    padding-right: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.skill-cat-desc{
+    text-align: center;
+    font-size: 20px;
+    color: #808080;
+}
+
+.skill-cat{
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+
+.whatido-icons-container{
+    display: flex;
+}
+
+.whatido-icons-container img{
+  width: 90px;
+  height: 65px;
+  object-fit: contain;
+  transition: transform .2s
+}
+
+.whatido-icons-container img:hover{
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 700px) {
+    .whatido-row{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #desc-img-container{
+        flex-direction: column-reverse;
+    }
+
+    #my-img{
+        height: 100px;
+    }
+    .whatido-icons-container img {
+        height: 40px;
+        width: 70px;
+    }
+
+    .what-i-do{
+        margin: 40px auto;
+    }
+
+    #name{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #my-img{
+        height: 200px;
+    }
+}
